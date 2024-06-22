@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* TableStyles.css */
+
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+  margin-bottom: 20px; /* Add some spacing below the tables */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse; /* Ensure borders are collapsed */
+  border: 1px solid #ddd; /* Add a light border around the table */
+  margin-bottom: 10px;
+  background-color: #fff; /* White background for better readability */
+}
+
+/* Table header styles */
+.table thead {
+  background-color: #f2f2f2; /* Light gray background for table headers */
+}
+
+/* Table header row styles */
+.table th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Add bottom border to header row */
+}
+
+/* Table body row styles */
+.table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Add bottom border to table rows */
+}
+
+/* Responsive table styles for smaller screens */
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+  }
+
+  .table {
+    font-size: 14px; /* Decrease font size for better fit on smaller screens */
+  }
+
+  .table th,
+  .table td {
+    padding: 6px; /* Decrease padding for better fit on smaller screens */
+  }
 }
