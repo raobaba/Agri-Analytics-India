@@ -5,9 +5,14 @@
   margin-bottom: 20px; /* Add some spacing below the tables */
 }
 
+h1,h2 {
+  text-align: center;
+}
+
 /* Table styles */
 .table {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   border-collapse: collapse; /* Ensure borders are collapsed */
   border: 1px solid #ddd; /* Add a light border around the table */
   margin-bottom: 10px;
